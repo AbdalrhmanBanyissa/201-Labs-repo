@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab: 01b - Getting Up and Running!</title>
+    <style>
+
+        * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        h1 {
+            background-color: gold;  width: 11%;
+            color: maroon;
+        }
+
+        * p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+    </style>
+
+        <script>
+            let userName = prompt("what's your name?");
+            console.log(userName);
+            let userLocation = prompt("where are you from "+userName+" ?");
+            console.log(userLocation);
+            alert("Welcom "+userName+" From "+userLocation+" To My Website");
+            let userAge = prompt("How old are you "+userName+" ?");
+            console.log(userAge);
+            let userFavoriteDrink = prompt("What is you'r morning Favorite Drink?");
+            console.log(userFavoriteDrink);
+            alert(
+            "Your are: "+userName+
+            " and your Age is: "+userAge+
+            " and your location is: "+userLocation+
+            " and You like to drink "+userFavoriteDrink+" in the morning"); 
+            
+</script>
+
+</head>
+<body>
+
+    <header></header>
+    <main>
+        <h1>Class 1 Lab</h1>
+        <p style="background-color: #0000FF ;color: rgb(255, 255, 255) ; width: 25%;"><script>document.write("Your Name is: "+userName);</script></p>
+        <p style="background-color: #5F9EA0 ;color: rgb(255, 255, 255) ; width: 50%;"><script>document.write("Your Age is: "+userAge);</script></p>
+        <p style="background-color: #A52A2A ;color: #bbb ; width: 75%;"><script>document.write("Your Location is: "+userLocation);</script></p>
+        <p style="background-color: #000 ;color: rgb(255, 255, 255) ;"><script>document.write("Your Morning Favorite Drink: "+userFavoriteDrink);</script></p>
+    </main>
+    <footer></footer>
+
+
+
+</body>
+</html>
