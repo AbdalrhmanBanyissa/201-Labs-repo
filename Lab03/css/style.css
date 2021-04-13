@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+
+body{
+    font-family: 'Lora', serif;
+    width: 1024px;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+img{
+    display: block;
+    width: 150px;
+    margin-left: 70%;
+    
+}
+.contactInformation li{
+    display: inline-block;
+    padding: 25px;
+    margin-top: 150px;
+    
+}
+
+main{
+    margin-top: 5%;
+}
+
+h1{
+    margin: -140px 25px;
+}
+
+a{
+    display: inline-block;
+    padding: 0 70px;
+    text-decoration: none;
+    
+}
+
+p{
+    margin-left: 10px;
+}
+
+h2{
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #ddd;
+    width: 75%;
+}
+
+ul{
+    list-style: none;
+}
+
+footer p:hover{
+    margin-left: 26%;
+    background-color: #ddd;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+}
+
+footer p{
+    margin-left: 26%;
+}
+
+.topTenSkills li:nth-child(odd), .experience li:nth-child(odd), .edu li:nth-child(odd), .skills li:nth-child(odd){
+    background-color:#F2F4F4;
+    width: 50%;
+}
+
+.topTenSkills li:nth-child(even), .experience li:nth-child(even), .edu li:nth-child(even), .skills li:nth-child(even){
+    background-color:#CACFD2;
+    width: 50%;
+}
