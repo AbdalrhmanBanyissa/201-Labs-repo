@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 'use strict';
 
 let counter = 0;
@@ -9,7 +8,7 @@ alert(
 
 alert( 'Good luck buddy' );
 
-// Q#1
+
 let nameQuestion = prompt( 'My name is Abdalrhman?' ).toLowerCase();
 while( nameQuestion !== 'yes' && nameQuestion !== 'y' && nameQuestion !== 'no' && nameQuestion !== 'n' ){
   nameQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
@@ -24,7 +23,7 @@ if ( nameQuestion === 'yes' || nameQuestion === 'y' ) {
   alert( ' Whaaat!!! loool that\'s one is funny hahahahahahahaha' );
 }
 
-// Q#2
+
 let backgroundQuestion = prompt( 'my cv logo background color is red?' ).toLowerCase();
 while( backgroundQuestion !== 'yes' && backgroundQuestion !== 'y' && backgroundQuestion !== 'no' && backgroundQuestion !== 'n' ){
   backgroundQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
@@ -39,7 +38,7 @@ if ( backgroundQuestion === 'yes' || backgroundQuestion === 'y' ) {
   alert( 'Bingo, It\'s Black' );
 }
 
-// Q#3
+
 let collageQuestion = prompt( 'I graduated from TTU as Mechanical Engineer in 2019?' ).toLowerCase();
 while( collageQuestion !== 'yes' && collageQuestion !== 'y' && collageQuestion !== 'no' && collageQuestion !== 'n' ){
   collageQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
@@ -54,7 +53,7 @@ if ( collageQuestion === 'yes' || collageQuestion === 'y' ) {
   alert( 'In fact I did :D' );
 }
 
-// Q#4
+
 let developerQuestion = prompt( 'I\'m a full-stack developer and works as an instructor in ASAC?' ).toLowerCase();
 while( developerQuestion !== 'yes' && developerQuestion !== 'y' && developerQuestion !== 'no' && developerQuestion !== 'n' ){
   developerQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
@@ -69,7 +68,7 @@ if ( developerQuestion === 'yes' || developerQuestion === 'y' ) {
   alert( 'That\'s right, I\'m studing software development in ASAC' );
 }
 
-// Q#5
+
 let workQuestion = prompt( 'I worked in microelectronics feild as a team leader?' ).toLowerCase();
 while( workQuestion !== 'yes' && workQuestion !== 'y' && workQuestion !== 'no' && workQuestion !== 'n' ){
   workQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
@@ -84,7 +83,7 @@ if ( workQuestion === 'yes' || workQuestion === 'y' ) {
 }
 
 
-// Q#6
+
 let i = 0;
 
 let guessingGame = prompt( 'Okay, Now I want to play with you a guessing Game, \n In the below dialog box I want you to guess the secret number that I got in my mind. hint: use the number domain between (1 - 100)','1-100' );
@@ -122,7 +121,6 @@ if( guessingGame !== '75' ){
 }
 
 
-// Q#7
 
 let guessingGamePart2 = prompt( 'Now I want you to choose my favorite lunch. Hint: I probably like more than one dish. ',
   'Mansaf, Maqluba, Kabsa, Grape leaves(Dwali), Shawarma, Burger, Fish, Grills' ).toLowerCase();
