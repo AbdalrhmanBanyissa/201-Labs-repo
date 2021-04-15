@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 'use strict';
 
 let counter = 0;
@@ -140,37 +139,39 @@ if ( guessingGamePart2 === myFavorateLunch[0] || guessingGamePart2 === myFavorat
   counter += 2;
 }
 
-switchFunction( counter );
-
-alert( 'Thank you '+userName+' for visiting, \n I am looking for your visit again because I really enjoy it, \n and I hope you enjoyed my annoying questions sorry for that :D. \n Thanks again and now I will leave you with my cv.' );
-
-
-
-function switchFunction ( x ){
-  switch( counter ) {
-  case 14:
-    alert( ' YAAAY! You answered all the  7 questions correctly, Good job. You\'r score is 14/14 ' );
-    break;
-  case 12:
-    alert( ' WOw! You answered  6 of 7 questions correctly, Good job. You\'r score is 12/14 ' );
-    break;
-  case 10:
-    alert( ' Great! You answered  5 of 7 questions correctly, Good job. You\'r score is 10/14 ' );
-    break;
-  case 8:
-    alert( ' Good job! You answered  4 of 7 questions correctly, You\'r score is 8/14 ' );
-    break;
-  case 6:
-    alert( ' Unlucky! You answered  3 of 7 questions correctly, You\'r score is 6/14 ' );
-    break;
-  case 4:
-    alert( '  obs! You answered  2 of 7 questions correctly, You\'r score is 4/14 ' );
-    break;
-  case 2:
-    alert( '   You only answered  1 of 7 questions correctly, You\'r score is 2/14 ' );
-    break;
-  default:
-    alert( '  Whaat!! You  answered  0 of 7 questions correctly, You\'r score is 0/14 lol ' );
-  }
+switch ( counter ) {
+case 14:
+  alert( ' YAAAY! You answered all the  7 questions correctly, Good job. You\'r score is 14/14 ' );
+  break;
+case 12:
+  alert( ' WOw! You answered  6 of 7 questions correctly, Good job. You\'r score is 12/14 ' );
+  break;
+case 10:
+  alert( ' Great! You answered  5 of 7 questions correctly, Good job. You\'r score is 10/14 ' );
+  break;
+case 8:
+  alert( ' Good job! You answered  4 of 7 questions correctly, You\'r score is 8/14 ' );
+  break;
+case 6:
+  alert( ' Unlucky! You answered  3 of 7 questions correctly, You\'r score is 6/14 ' );
+  break;
+case 4:
+  alert( '  obs! You answered  2 of 7 questions correctly, You\'r score is 4/14 ' );
+  break;
+case 2:
+  alert( '   You only answered  1 of 7 questions correctly, You\'r score is 2/14 ' );
+  break;
+default:
+  alert( '  Whaat!! You  answered  0 of 7 questions correctly, You\'r score is 0/14 lol ' );
 }
+
+const finalMessege = function( name ){
+  name = alert( 'Thank you ' + name + ' for visiting, \n I am looking for your visit again because I really enjoy it, \n and I hope you enjoyed my annoying questions sorry for that :D. \n Thanks again and now I will leave you with my cv.' );
+  console.log( name );
+  return ( name );
+};
+
+finalMessege( userName );
+
+
 
