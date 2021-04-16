@@ -1,4 +1,40 @@
 'use strict';
+const loopFunction = function ( question ) {
+  console.log( yesOrNoQuestions );
+  while ( question !== 'yes' && question !== 'y' && question !== 'no' && question !== 'n' ) {
+    question = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
+    console.log( question );
+    yesOrNoQuestions = question;
+  }
+  return ( yesOrNoQuestions );
+};
+
+const switchFunction = function ( value ) {
+  switch ( value ) {
+  case 14:
+    alert( ' YAAAY! You answered all the  7 questions correctly, Good job. You\'r score is 14/14 ' );
+    break;
+  case 12:
+    alert( ' WOw! You answered  6 of 7 questions correctly, Good job. You\'r score is 12/14 ' );
+    break;
+  case 10:
+    alert( ' Great! You answered  5 of 7 questions correctly, Good job. You\'r score is 10/14 ' );
+    break;
+  case 8:
+    alert( ' Good job! You answered  4 of 7 questions correctly, You\'r score is 8/14 ' );
+    break;
+  case 6:
+    alert( ' Unlucky! You answered  3 of 7 questions correctly, You\'r score is 6/14 ' );
+    break;
+  case 4:
+    alert( '  obs! You answered  2 of 7 questions correctly, You\'r score is 4/14 ' );
+    break;
+  case 2:
+    alert( '   You only answered  1 of 7 questions correctly, You\'r score is 2/14 ' );
+    break;
+  default:
+    alert( '  Whaat!! You  answered  0 of 7 questions correctly, You\'r score is 0/14 lol ' );
+  }};
 
 let counter = 0;
 let userName = prompt( 'Welcom to my website, What is your name?' );
@@ -9,13 +45,12 @@ alert(
 alert( 'Good luck buddy' );
 
 // Q#1
-let nameQuestion = prompt( 'My name is Abdalrhman?' ).toLowerCase();
-while ( nameQuestion !== 'yes' && nameQuestion !== 'y' && nameQuestion !== 'no' && nameQuestion !== 'n' ) {
-  nameQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
-}
-console.log( nameQuestion );
 
-if ( nameQuestion === 'yes' || nameQuestion === 'y' ) {
+let yesOrNoQuestions = prompt( 'My name is Abdalrhman?' ).toLowerCase();
+loopFunction ( yesOrNoQuestions );
+
+
+if ( yesOrNoQuestions === 'yes' || yesOrNoQuestions === 'y' ) {
   counter += 2;
   alert( 'Bravo, but trust me this is just a warm-up, now let\'s talk :D' );
 } else {
@@ -24,13 +59,10 @@ if ( nameQuestion === 'yes' || nameQuestion === 'y' ) {
 }
 
 // Q#2
-let backgroundQuestion = prompt( 'my cv logo background color is red?' ).toLowerCase();
-while ( backgroundQuestion !== 'yes' && backgroundQuestion !== 'y' && backgroundQuestion !== 'no' && backgroundQuestion !== 'n' ) {
-  backgroundQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
-}
-console.log( backgroundQuestion );
+yesOrNoQuestions = prompt( 'my cv logo background color is red?' ).toLowerCase();
+loopFunction ( yesOrNoQuestions );
 
-if ( backgroundQuestion === 'yes' || backgroundQuestion === 'y' ) {
+if ( yesOrNoQuestions === 'yes' || yesOrNoQuestions === 'y' ) {
 
   alert( 'Catch you :p, It\'s Black' );
 } else {
@@ -39,13 +71,10 @@ if ( backgroundQuestion === 'yes' || backgroundQuestion === 'y' ) {
 }
 
 // Q#3
-let collageQuestion = prompt( 'I graduated from TTU as Mechanical Engineer in 2019?' ).toLowerCase();
-while ( collageQuestion !== 'yes' && collageQuestion !== 'y' && collageQuestion !== 'no' && collageQuestion !== 'n' ) {
-  collageQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
-}
-console.log( collageQuestion );
+yesOrNoQuestions = prompt( 'I graduated from TTU as Mechanical Engineer in 2019?' ).toLowerCase();
+loopFunction ( yesOrNoQuestions );
 
-if ( collageQuestion === 'yes' || collageQuestion === 'y' ) {
+if ( yesOrNoQuestions === 'yes' || yesOrNoQuestions === 'y' ) {
   counter += 2;
   alert( 'That\'s right, actually it was a great summer I got the best graduation party ever ^^' );
 } else {
@@ -54,13 +83,10 @@ if ( collageQuestion === 'yes' || collageQuestion === 'y' ) {
 }
 
 // Q#4
-let developerQuestion = prompt( 'I\'m a full-stack developer and works as an instructor in ASAC?' ).toLowerCase();
-while ( developerQuestion !== 'yes' && developerQuestion !== 'y' && developerQuestion !== 'no' && developerQuestion !== 'n' ) {
-  developerQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
-}
-console.log( developerQuestion );
+yesOrNoQuestions = prompt( 'I\'m a full-stack developer and works as an instructor in ASAC?' ).toLowerCase();
+loopFunction ( yesOrNoQuestions );
 
-if ( developerQuestion === 'yes' || developerQuestion === 'y' ) {
+if ( yesOrNoQuestions === 'yes' || yesOrNoQuestions === 'y' ) {
 
   alert( 'Wrong! I\'m a full-stack development student in ASAC' );
 } else {
@@ -69,13 +95,10 @@ if ( developerQuestion === 'yes' || developerQuestion === 'y' ) {
 }
 
 // Q#5
-let workQuestion = prompt( 'I worked in microelectronics feild as a team leader?' ).toLowerCase();
-while ( workQuestion !== 'yes' && workQuestion !== 'y' && workQuestion !== 'no' && workQuestion !== 'n' ) {
-  workQuestion = prompt( ' Please answer with (Yes or Y) and (No or N) ' ).toLowerCase();
-}
-console.log( workQuestion );
+yesOrNoQuestions = prompt( 'I worked in microelectronics feild as a team leader?' ).toLowerCase();
+loopFunction ( yesOrNoQuestions );
 
-if ( workQuestion === 'yes' || workQuestion === 'y' ) {
+if ( yesOrNoQuestions === 'yes' || yesOrNoQuestions === 'y' ) {
   counter += 2;
   alert( 'That\'s right, and it was fantastic experiment' );
 } else {
@@ -125,6 +148,7 @@ if ( guessingGame !== '75' ) {
 
 let guessingGamePart2 = prompt( 'Now I want you to choose my favorite lunch. Hint: I probably like more than one dish. ',
   'Mansaf, Maqluba, Kabsa, Grape leaves(Dwali), Shawarma, Burger, Fish, Grills' ).toLowerCase();
+console.log( guessingGamePart2 );
 
 let myFavorateLunch = ['mansaf', 'burger', 'grills'];
 for ( i = 1; i < 6; i++ ) {
@@ -139,39 +163,7 @@ if ( guessingGamePart2 === myFavorateLunch[0] || guessingGamePart2 === myFavorat
   counter += 2;
 }
 
-switch ( counter ) {
-case 14:
-  alert( ' YAAAY! You answered all the  7 questions correctly, Good job. You\'r score is 14/14 ' );
-  break;
-case 12:
-  alert( ' WOw! You answered  6 of 7 questions correctly, Good job. You\'r score is 12/14 ' );
-  break;
-case 10:
-  alert( ' Great! You answered  5 of 7 questions correctly, Good job. You\'r score is 10/14 ' );
-  break;
-case 8:
-  alert( ' Good job! You answered  4 of 7 questions correctly, You\'r score is 8/14 ' );
-  break;
-case 6:
-  alert( ' Unlucky! You answered  3 of 7 questions correctly, You\'r score is 6/14 ' );
-  break;
-case 4:
-  alert( '  obs! You answered  2 of 7 questions correctly, You\'r score is 4/14 ' );
-  break;
-case 2:
-  alert( '   You only answered  1 of 7 questions correctly, You\'r score is 2/14 ' );
-  break;
-default:
-  alert( '  Whaat!! You  answered  0 of 7 questions correctly, You\'r score is 0/14 lol ' );
-}
+switchFunction ( counter );
 
-const finalMessege = function( name ){
-  name = alert( 'Thank you ' + name + ' for visiting, \n I am looking for your visit again because I really enjoy it, \n and I hope you enjoyed my annoying questions sorry for that :D. \n Thanks again and now I will leave you with my cv.' );
-  console.log( name );
-  return ( name );
-};
-
-finalMessege( userName );
-
-
+userName = alert( 'Thank you ' + userName + ' for visiting, \n I am looking for your visit again because I really enjoy it, \n and I hope you enjoyed my annoying questions sorry for that :D. \n Thanks again and now I will leave you with my cv.' );
 
